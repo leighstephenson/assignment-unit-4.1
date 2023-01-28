@@ -72,16 +72,19 @@ console.log (`Last item is ${lastDataItem}`);
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 //Function goes through the array and finds the value that I input
+
 let array2 = ['A', 'B', 'C', 'D', 'E'];
+
 function find (value, array2){
   for (let i=0; i <array2.length; i++){
     if (array2[i].trim() === value){
-      return true;
+      return true;} 
+    else if (array2[i] !== value){
+        return false;}
+      }
     }
-  }
-}
-console.log(find('B', array2));
 
+console.log(find('A', array2));
 
 
 // ----------------------
@@ -89,18 +92,18 @@ console.log(find('B', array2));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
+// function isFirstLetter(letter, string) {
 
-}
+// }
 // console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 // console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
-}
+// function sumAll( ) {
+//   let sum = 0
+//   // TODO: loop to add items
+//   return sum;
+// }
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
